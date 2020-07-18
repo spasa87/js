@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background: url("Slika/1.jpg");
+            background-size: cover;
+            height: 100px;
+            margin: 20px auto;
+            position: relative;
+            top: 40px;
+            left: 50px;
+        }
+        header #d1 {
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+        p {
+            background-color: darkgrey;
+            width: 150px;
+            float: left;
+        }
+        p:last-child {
+            float:right;
+        }
+        div {
+            overflow: hidden;
+        }
+
+        nav ul{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: gold;
+            overflow: hidden;
+            list-style: none;
+        }
+        nav ul li {
+            padding: 9px 0;
+            float: left;
+            width: 25%;
+            border: 1px solid black;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        nav ul li#parni {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="d1">
+            Welcome to ITBootcamp pizza site!
+        </div>
+    </header>
+    <br>
+    <div>
+        <p>Prvi paragraf.</p>
+        <p>Drugi paragraf.</p>
+        <p >Treci paragraf.</p>
+    </div>
+    <br>
+    <nav>
+    <ul>
+        <li>Home</li>
+        <li id="parni">Tacka 2</li>
+        <li>Tacka 3</li>
+        <li>Tacka 4</li>
+    </ul>
+    </nav>
+</body>
+</html>

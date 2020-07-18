@@ -1,0 +1,16 @@
+#prvi {
+    display: inline-block;
+    padding: 10px 90px 10px 20px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: green;
+}
+#drugi {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px 90px 10px 20px;
+    border: 2px solid black;
+    margin: 5px;
+    background-color: red;
+}

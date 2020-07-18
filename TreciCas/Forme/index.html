@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        form {
+            border-style: grove;
+        }
+    </style>
+</head>
+<body>
+     <form>
+         <fieldset>
+             <legend>Podaci o ispitaniku</legend>
+             <label>Ime: </label>
+             <input type: "text" value="Ana">
+             <br>
+             <label>Prezime: </label>
+             <input type: "text" placeholder="Antic">
+             <br>
+             <label>Skola: </label>
+             <input type="text" value="ITBootCamp" disabled>
+             <br>
+             <label>Sifra: </label>
+             <input tyoe="password">
+             <br>
+             <label>Godina rodjenja: </label>
+             <input type="number" min="1900" max="3000" step="1">
+             <br>
+             <label>Unesite datum putovanja: </label>
+             <input type="date" min="2020-06-01" max="2020-09-01" step="7">
+             <br>
+             <label>Odaberite pol: </label>
+             <input type="radio" name="pol" checked>Neopredeljen
+             <input type="radio" name="pol">Muski
+             <input type="radio" name="pol">Zenski
+             <br>
+             <label>Moje vestine:</label>
+             <input type="checkbox" name="vestine">HTML
+             <input type="checkbox" name="vestine">CSS
+             <input type="checkbox" name="vestine">JS
+             <br>
+             <label>Vas CV: </label>
+             <input type="file">
+        </fieldset>
+
+        <fieldset>
+            <legend>Ostale informacije</legend>
+            <label>Odaberite kurs:</label>
+            <select>
+                <optgroup label="Nis">
+                    <option value="">PHP</option>
+                    <option value="">JS</option>
+                    <option value="">QA</option>
+                </optgroup>
+                <optgroup label="Beograd">
+                    <option value="">QA</option>
+                    <option value="">JS</option>
+                    <option value="">Java</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="Posalji">
+            <input type="reset" value="Resetuj">
+            <button>Dugme</button>
+            <input type="button" value="Klikni" onclick="alert('Zdravo!')">
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset>
+        <legend>Form Validation</legend>
+        <label>Name: </label>
+        <input type="text" value="">
+        <br>
+        <label>Username: </label>
+        <input type="text">
+        <br>
+        <label>Password: </label>
+        <input type="password">
+        <br>
+        <label>Re-type password: </label>
+        <input type="password">
+        <br>
+        <label>Gender: </label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other
+        <br>
+        <label>Programming skills: </label>
+        <input type="checkbox" name="skill">Java
+        <input type="checkbox" name="skill">Android
+        <input type="checkbox" name="skill">Ruby
+        <input type="checkbox" name="skill">.Net
+        <br>
+        <label>Contact no: </label>
+        <input type="text">
+        <br>
+        <label>Email: </label>
+        <input type="email">
+        <br>
+        <label>College: </label>
+        <select>
+            <option>Select college</option>
+            <option>Sellect</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
