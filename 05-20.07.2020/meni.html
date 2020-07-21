@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #gornji ul {
+            overflow: hidden;
+            list-style-type: none;
+            padding: 0;
+            background-color: brown;
+        }
+        #gornji ul li {
+            float:left;
+            width: 25%;
+            text-align: center;
+        }
+        #gornji ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px;
+            display: block;
+        }
+        #gornji ul li a:hover {
+            background-color: teal;
+        }
+        .submenu {
+            position:absolute;
+            background-color: tomato;
+            width: 25%;
+            display: none;
+        }
+        .dropdown:hover .submenu {
+            display: block;
+        }
+
+        /*stilovi za donji navigacioni meni*/
+        #donji ul {
+            width: 25%;
+            position: fixed;
+            bottom: 1px;
+            list-style-type: none;
+            padding: 0;
+            margin: 1px;
+        }
+        #donji ul li {
+            border: 1px solid red;
+            height: 70px;
+            background-color: royalblue;
+            text-align: center;
+        }
+        #donji ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            display: block;
+            padding: 20px;
+        }
+        #donji ul li:hover {
+            background-color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <nav id="gornji">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our mission</a></li>
+            <li class="dropdown">
+                <a href="#">Customers</a>
+                <div class="submenu">
+                    <a href="#">Nikola</a>
+                    <a href="#">ikola</a>
+                    <a href="#">kola</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Our ingredients</a>
+                <div class="submenu">
+                    <a href="#">Nikola</a>
+                    <a href="#">ikola</a>
+                    <a href="#">kola</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <p>Paragraf koji ide u dva reda. Paragraf koji ide u dva reda. 
+        Paragraf koji ide u dva reda. Paragraf koji ide u dva reda. 
+        Paragraf koji ide u dva reda. Paragraf koji ide u dva reda. 
+        Paragraf koji ide u dva reda. Paragraf koji ide u dva reda. 
+    </p>
+    <nav id="donji">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Ingredians</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
